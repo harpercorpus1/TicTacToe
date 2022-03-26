@@ -29,6 +29,8 @@ public final class GameSetupScreen extends JFrame implements ActionListener {
     private GameSetupController controller;
 
     public GameSetupScreen() {
+        this.setMinimumSize(new Dimension(500,600));
+        
         submitButton = new JButton("Submit");
         numRowsLbl = new JLabel("Number of Rows: ");
         numRowsTxt = new JTextArea(1, 10);
